@@ -1,6 +1,6 @@
 
-Please install the below package:
---------------------------------
+Please install it's:
+-------------------
 
 - Python 3.5+
 - NLTK
