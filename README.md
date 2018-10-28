@@ -11,7 +11,7 @@ Prerequisites
 - textblob
 ```
 
-## Examples
+## Quickstart
 ### Run a single sentence
 ```
 python main.py --> inputText = "A man is riding a horse"
