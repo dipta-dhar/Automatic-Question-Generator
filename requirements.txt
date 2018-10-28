@@ -1,0 +1,9 @@
+
+Please install the below package:
+--------------------------------
+
+- Python 3.5+
+- NLTK
+- NumPy
+- textblob
+
