@@ -58,7 +58,7 @@ def main():
     aqg = aqgFunction.AutomaticQuestionGenerator()
 
     # Enter input Text File PATH
-    inputTextPath = "PATH: (E:/in.txt)"
+    inputTextPath = "PATH: (Like:- E:/in.txt)"
     readFile = open(inputTextPath, 'r+')
     inputText = readFile.read()
 
