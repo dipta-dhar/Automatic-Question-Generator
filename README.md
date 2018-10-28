@@ -48,3 +48,32 @@ Q-08: Who ever belittling me?
 Q-09: Who greatly appreciate the quality in her?
 Q-10: Whom she does not make feel obliged?
 ```
+
+#Code
+## main.py
+```
+# Main Function
+def main():
+    # Create AQG object
+    aqg = aqgFunction.AutomaticQuestionGenerator()
+
+    # Enter input Text File PATH
+    inputTextPath = "PATH: (E:/in.txt)"
+    readFile = open(inputTextPath, 'r+')
+    inputText = readFile.read()
+
+    questionList = aqg.aqgParse(inputText)
+    aqg.display(questionList)
+
+    return 0
+
+
+# Call Main Function
+if __name__ == "__main__":
+    main()
+
+```
+
+
+
+*** --- --- ***
