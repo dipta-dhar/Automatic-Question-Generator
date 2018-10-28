@@ -27,7 +27,12 @@ python main.py --> inputText = filePATH
 ## Example
 ### input:
 ```
-My best friend and I have been studying in the same school since kindergarten. We have been classmates each year at school. We share a very close bond and have a special friendship that we cherish and treasure. My friend is my partner, sitting beside me in class. She is kindly and helpful, and if I have any difficulties in understanding any topic in my studies, or in completing my homework or school project, she helps me. She is brilliant in mathematics and the sciences, while I am good at English. So we both help each other in whatever way possible. She helps me without ever belittling me. I greatly appreciate the quality in her. She does not make me feel obliged.
+My best friend and I have been studying in the same school since kindergarten. We have been classmates each year at school. We share a
+very close bond and have a special friendship that we cherish and treasure. My friend is my partner, sitting beside me in class. She is
+kindly and helpful, and if I have any difficulties in understanding any topic in my studies, or in completing my homework or school
+project, she helps me. She is brilliant in mathematics and the sciences, while I am good at English. So we both help each other in
+whatever way possible. She helps me without ever belittling me. I greatly appreciate the quality in her. She does not make me feel
+obliged.
 ```
 
 ### output:
