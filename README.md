@@ -12,12 +12,12 @@ Prerequisites
 ```
 
 ## Quickstart
-### Run a single sentence
+### Run a sentence
 ```
 python main.py --> inputText = "My best friend and I have been studying in the same school since kindergarten."
 ```
 
-### Run a file
+### Run a textfile
 ```
 python main.py --> inputText = filePATH
                    Like: inputText = "E:/EDU/Study/FinalProject/NLPio/in.txt"
