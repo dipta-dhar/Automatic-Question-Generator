@@ -1,5 +1,5 @@
 # Automatic Question Generator [AQG]
-Automatic Question Generator (From Text, PDF &amp; DOC)
+Automatic Question Generator from Text
 
 
 Prerequisites
