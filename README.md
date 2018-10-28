@@ -14,7 +14,7 @@ Prerequisites
 ## Quickstart
 ### Run a single sentence
 ```
-python main.py --> inputText = "A man is riding a horse"
+python main.py --> inputText = "My best friend and I have been studying in the same school since kindergarten."
 ```
 
 ### Run a file
