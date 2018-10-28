@@ -6,7 +6,7 @@ def main():
     # Create AQG object
     aqg = aqgFunction.AutomaticQuestionGenerator()
 
-    inputTextPath = "E:/EDU/Study/FinalProject/Automatic-Question-Generator-AQG/NLPio/in.txt"
+    inputTextPath = "E:/EDU/Study/FinalProject/NLPio/in.txt"
     readFile = open(inputTextPath, 'r+')
     inputText = readFile.read()
 
