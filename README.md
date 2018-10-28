@@ -49,7 +49,7 @@ Q-09: Who greatly appreciate the quality in her?
 Q-10: Whom she does not make feel obliged?
 ```
 
-#Code
+# MAIN Function
 ## main.py
 ```
 # Main Function
