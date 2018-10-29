@@ -51,7 +51,7 @@ Q-10: Whom she does not make feel obliged?
 
 # Main Function
 ## main.py
-.. code-block:: python
+```
     # Main Function
     def main():
         # Create AQG object
@@ -72,7 +72,8 @@ Q-10: Whom she does not make feel obliged?
     if __name__ == "__main__":
         main()
  
+```
 
 
-
-*** --- --- ***
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+============================================================================
