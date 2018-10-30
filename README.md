@@ -51,7 +51,7 @@ Q-10: Whom she does not make feel obliged?
 
 # Main Function
 ## main.py
-```
+```python
     # Main Function
     def main():
         # Create AQG object
