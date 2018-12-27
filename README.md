@@ -48,7 +48,7 @@ Q-08: Who ever belittling me?
 Q-09: Who greatly appreciate the quality in her?
 Q-10: Whom she does not make feel obliged?
 ```
-
+ 
 # Main Function
 ## main.py
 ```python
