@@ -8,7 +8,7 @@ Prerequisites
 - Python 3.5+
 - NLTK
 - NumPy
-- textblob
+- Textblob
 ```
 
 ## Quickstart
