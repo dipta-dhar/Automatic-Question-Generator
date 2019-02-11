@@ -1,14 +1,19 @@
-import nltk
+import spacy
 
 
-def nerTagger(tokenize):
-    tagged_sentences = nltk.pos_tag(tokenize)
-    ne_chunked_sents = nltk.ne_chunk(tagged_sentences)
+def nerTagger(nlp, tokenize):
+    doc = nlp(tokenize)
 
-    named_entities = []
-    for tagged_tree in ne_chunked_sents:
-        if hasattr(tagged_tree, 'label'):
-            entity_name = ' '.join(c[0] for c in tagged_tree.leaves())
-            entity_type = tagged_tree.label()
-            named_entities.append((entity_name, entity_type))
-    return named_entities
+    finalList = []
+    array = [[]]
+    for word in doc:
+        array[0] = 0
+        for ner in doc.ents:
+            if (ner.text == word.text):
+                finalList.append((word.text, ner.label_))
+                array[0] = 1
+        if (array[0] == 0):
+            finalList.append((word.text, 'O'))
+
+    return finalList
+
