@@ -14,4 +14,3 @@ def hNvalidation(sentence):
 
     return flag
 
-
