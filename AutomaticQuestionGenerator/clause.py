@@ -44,7 +44,7 @@ def whom_1(segment_set, num, ner):
                         if ner[x1][0] == chunked[j][x][0]:
                             if ner[x1][1] == "PERSON":
                                 str2 = " to whom "
-                            elif ner[x1][1] == "LOCATION" or ner[x1][1] == "ORGANISATION":
+                            elif ner[x1][1] == "LOC" or ner[x1][1] == "ORG" or ner[x1][1] == "GPE":
                                 str2 = " where "
                             elif ner[x1][1] == "TIME" or ner[x1][1] == "DATE":
                                 str2 = " when "
@@ -129,7 +129,7 @@ def whom_2(segment_set, num, ner):
                         if ner[x1][0] == chunked[j][x][0]:
                             if ner[x1][1] == "PERSON":
                                 str2 = " " + chunked[j][0][0] + " whom "
-                            elif ner[x1][1] == "LOCATION" or ner[x1][1] == "ORGANISATION":
+                            elif ner[x1][1] == "LOC" or ner[x1][1] == "ORG" or ner[x1][1] == "GPE":
                                 str2 = " where "
                             elif ner[x1][1] == "TIME" or ner[x1][1] == "DATE":
                                 str2 = " when "
@@ -214,7 +214,7 @@ def whom_3(segment_set, num, ner):
                         if ner[x1][0] == chunked[j][x][0]:
                             if ner[x1][1] == "PERSON":
                                 str2 = " whom "
-                            elif ner[x1][1] == "LOCATION" or ner[x1][1] == "ORGANISATION":
+                            elif ner[x1][1] == "LOC" or ner[x1][1] == "ORG" or ner[x1][1] == "GPE":
                                 str2 = " what "
                             elif ner[x1][1] == "TIME" or ner[x1][1] == "DATE":
                                 str2 = " what time "
@@ -407,7 +407,7 @@ def what_to_do(segment_set, num, ner):
                             if ner[x1][0] == chunked[j][x][0]:
                                 if ner[x1][1] == "PERSON":
                                     tr = " whom "
-                                elif ner[x1][1] == "LOCATION" or ner[x1][1] == "ORGANISATION":
+                                elif ner[x1][1] == "LOC" or ner[x1][1] == "ORG" or ner[x1][1] == "GPE":
                                     tr = " where "
                                 elif ner[x1][1] == "TIME" or ner[x1][1] == "DATE":
                                     tr = " when "
@@ -455,9 +455,9 @@ def who(segment_set, num, ner):
             s11 = ' who '
             for m12 in range(len(ner)):
                 if ner[m12][0] == tag[m11][0]:
-                    if ner[m12][1] == 'LOCATION':
+                    if ner[m12][1] == 'LOC':
                         s11 = ' which place '
-                    elif ner[m12][1] == 'ORGANISATION':
+                    elif ner[m12][1] == 'ORG':
                         s11 = ' who '
                     elif ner[m12][1] == 'DATE' or ner[m12][1] == 'TIME':
                         s11 = ' what time '
