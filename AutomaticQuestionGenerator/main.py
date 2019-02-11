@@ -6,7 +6,7 @@ def main():
     # Create AQG object
     aqg = aqgFunction.AutomaticQuestionGenerator()
 
-    inputTextPath = "input file path -- ../DB/db.txt"
+    inputTextPath = "input file path -- ?? ../DB/db.txt"
     readFile = open(inputTextPath, 'r+', encoding="utf8")
     #readFile = open(inputTextPath, 'r+', encoding="utf8", errors = 'ignore')
 
