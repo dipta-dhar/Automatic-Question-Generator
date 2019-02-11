@@ -1,3 +1,4 @@
+import spacy
 import clause
 import nonClause
 import identification
@@ -8,13 +9,17 @@ from nlpNER import nerTagger
 class AutomaticQuestionGenerator():
     # AQG Parsing & Generate a question
     def aqgParse(self, sentence):
+
+        #nlp = spacy.load("en")
+        nlp = spacy.load('en_core_web_md')
+
         singleSentences = sentence.split(".")
         questionsList = []
         if len(singleSentences) != 0:
             for i in range(len(singleSentences)):
                 segmentSets = singleSentences[i].split(",")
 
-                ner = nerTagger(singleSentences[i])
+                ner = nerTagger(nlp, singleSentences[i])
 
                 if (len(segmentSets)) != 0:
                     for j in range(len(segmentSets)):
@@ -117,6 +122,24 @@ class AutomaticQuestionGenerator():
         return questionsList
 
 
+
+    def DisNormal(self, str):
+        print("\n")
+        print("------X------")
+        print("Start  output:\n")
+
+        count = 0
+        out = ""
+
+        for i in range(len(str)):
+            count = count + 1
+            print("Q-0%d: %s" % (count, str[i]))
+
+        print("")
+        print("End  OutPut")
+        print("-----X-----\n\n")
+
+
     # AQG Display the Generated Question
     def display(self, str):
         print("\n")
@@ -150,8 +173,8 @@ class AutomaticQuestionGenerator():
         print("End  OutPut")
         print("-----X-----\n\n")
 
-        output = "E:/EDU/Study/FinalProject/Automatic-Question-Generator-AQG/NLPio/output.txt"
-        w = open(output, 'w+')
+        output = "E:/EDU/Study/FinalProject/AutomaticQuestionGenerator/DB/output01.txt"
+        w = open(output, 'w+', encoding="utf8")
         w.write(out)
         w.close()
         return 0
