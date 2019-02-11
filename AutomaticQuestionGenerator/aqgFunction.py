@@ -173,7 +173,7 @@ class AutomaticQuestionGenerator():
         print("End  OutPut")
         print("-----X-----\n\n")
 
-        output = "E:/EDU/Study/FinalProject/AutomaticQuestionGenerator/DB/output01.txt"
+        output = "output file path -- ?? ../DB/output.txt"
         w = open(output, 'w+', encoding="utf8")
         w.write(out)
         w.close()
