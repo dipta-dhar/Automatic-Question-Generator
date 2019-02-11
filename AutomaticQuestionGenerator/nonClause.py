@@ -46,7 +46,7 @@ def what_whom1(segment_set, num, ner):
                         if ner[x1][0] == chunked[j][x][0]:
                             if ner[x1][1] == "PERSON":
                                 str2 = " to whom "
-                            elif ner[x1][1] == "LOCATION" or ner[x1][1] == "ORGANISATION":
+                            elif ner[x1][1] == "LOC" or ner[x1][1] == "ORG" or ner[x1][1] == "GPE":
                                 str2 = " where "
                             elif ner[x1][1] == "TIME" or ner[x1][1] == "DATE":
                                 str2 = " when "
@@ -101,7 +101,7 @@ def what_whom2(segment_set, num, ner):
                         if ner[x1][0] == chunked[j][x][0]:
                             if ner[x1][1] == "PERSON":
                                 str2 = " " + chunked[j][0][0] + "whom "
-                            elif ner[x1][1] == "LOCATION" or ner[x1][1] == "ORGANISATION":
+                            elif ner[x1][1] == "LOC" or ner[x1][1] == "ORG" or ner[x1][1] == "GPE":
                                 str2 = " where "
                             elif ner[x1][1] == "TIME" or ner[x1][1] == "DATE":
                                 str2 = " when "
