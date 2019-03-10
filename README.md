@@ -7,8 +7,8 @@ Prerequisites
 ```
 - Python 3.5+
 - NLTK
+- SpaCy
 - NumPy
-- Textblob
 ```
 
 ## Quickstart
