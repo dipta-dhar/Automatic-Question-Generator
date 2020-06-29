@@ -13,13 +13,13 @@ Prerequisites
 
 ## Quickstart (main.py)
 
-### Run a sentence
+### run user input:
 ```python
 inputText = '''My best friend and I have been studying in the same 
                school since kindergarten.'''
 ```
 
-### Run a textfile
+### run from user text file:
 ```python
 inputText = filePATH
 
@@ -29,6 +29,7 @@ inputText = filePATH
 
 
 ## Example
+
 ### input:
 ```
 My best friend and I have been studying in the same school since kindergarten. We have been classmates each year at 
