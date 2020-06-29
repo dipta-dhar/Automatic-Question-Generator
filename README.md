@@ -16,7 +16,7 @@ Prerequisites
 ### Run a sentence
 ```python
 inputText = '''My best friend and I have been studying in the same 
-            school since kindergarten.'''
+               school since kindergarten.'''
 ```
 
 ### Run a textfile
