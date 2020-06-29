@@ -1,4 +1,4 @@
-# Automatic Question Generator [AQG]
+# Automatic Question Generator
 Automatic Question Generator from Text
 
 
@@ -6,21 +6,25 @@ Prerequisites
 -------------
 ```
 - Python 3.5+
-- NLTK
+- NLTK 
 - SpaCy
 - NumPy
 ```
 
-## Quickstart
+## Quickstart (main.py)
+
 ### Run a sentence
-```
-python main.py --> inputText = "My best friend and I have been studying in the same school since kindergarten."
+```python
+inputText = '''My best friend and I have been studying in the same 
+            school since kindergarten.'''
 ```
 
 ### Run a textfile
-```
-python main.py --> inputText = filePATH
-                   Like: inputText = "E:/EDU/Study/FinalProject/NLPio/in.txt"
+```python
+inputText = filePATH
+
+# Like:
+# inputText = "E:/EDU/project/input.txt"
 ```
 
 
@@ -75,5 +79,5 @@ Q-10: Whom she does not make feel obliged?
 ```
 
 
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-===================================================================================================
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+==============================================================================================
