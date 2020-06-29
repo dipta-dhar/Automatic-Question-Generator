@@ -54,7 +54,8 @@ Q-09: Who greatly appreciate the quality in her?
 Q-10: Whom she does not make feel obliged?
 ```
  
-# Main Function
+# SETTINGS OF MAIN FUNCTION:
+
 ## main.py
 ```python
     # Main Function
