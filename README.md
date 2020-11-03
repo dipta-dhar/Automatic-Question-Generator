@@ -1,4 +1,4 @@
-# Automatic Question Generator
+## Automatic Question Generator
 Automatic Question Generator from Text
 
 
@@ -11,15 +11,15 @@ Prerequisites
 - NumPy
 ```
 
-## Quickstart (main.py)
+### Quickstart (main.py)
 
-### run user input:
+#### run user input:
 ```python
 inputText = '''My best friend and I have been studying in the same 
                school since kindergarten.'''
 ```
 
-### run from user text file:
+#### run from user text file:
 ```python
 inputText = filePATH
 
@@ -28,9 +28,9 @@ inputText = filePATH
 ```
 
 
-## Example
+### Example
 
-### input:
+#### input:
 ```
 My best friend and I have been studying in the same school since kindergarten. We have been classmates each year at 
 school. We share a very close bond and have a special friendship that we cherish and treasure. My friend is my 
@@ -40,7 +40,7 @@ and the sciences, while I am good at English. So we both help each other in what
 without ever belittling me. I greatly appreciate the quality in her. She does not make me feel obliged.
 ```
 
-### output:
+#### output:
 ```
 Q-01: Have you been classmates each year?
 Q-02: Have you been at school?
@@ -54,9 +54,9 @@ Q-09: Who greatly appreciate the quality in her?
 Q-10: Whom she does not make feel obliged?
 ```
  
-# SETTINGS OF MAIN FUNCTION:
+## SETTINGS OF MAIN FUNCTION:
 
-## main.py
+### main.py
 ```python
     # Main Function
     def main():
@@ -81,5 +81,5 @@ Q-10: Whom she does not make feel obliged?
 ```
 
 
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-==============================================================================================
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+=============================================================================================
