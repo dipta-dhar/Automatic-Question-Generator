@@ -9,6 +9,13 @@ from nlpNER import nerTagger
 class AutomaticQuestionGenerator():
     # AQG Parsing & Generate a question
     def aqgParse(self, sentence):
+        """
+        Given a list of - of sentences.
+
+        Args:
+            self: (todo): write your description
+            sentence: (str): write your description
+        """
 
         #nlp = spacy.load("en")
         nlp = spacy.load('en_core_web_md')
@@ -124,6 +131,13 @@ class AutomaticQuestionGenerator():
 
 
     def DisNormal(self, str):
+        """
+        Prints a string
+
+        Args:
+            self: (todo): write your description
+            str: (str): write your description
+        """
         print("\n")
         print("------X------")
         print("Start  output:\n")
@@ -142,6 +156,13 @@ class AutomaticQuestionGenerator():
 
     # AQG Display the Generated Question
     def display(self, str):
+        """
+        Prints a formatted string
+
+        Args:
+            self: (todo): write your description
+            str: (todo): write your description
+        """
         print("\n")
         print("------X------")
         print("Start  output:\n")

@@ -3,6 +3,11 @@ import aqgFunction
 
 # Main Function
 def main():
+    """
+    Main function.
+
+    Args:
+    """
     # Create AQG object
     aqg = aqgFunction.AutomaticQuestionGenerator()
 

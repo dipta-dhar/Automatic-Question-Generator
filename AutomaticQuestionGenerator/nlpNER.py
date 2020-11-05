@@ -2,6 +2,13 @@ import spacy
 
 
 def nerTagger(nlp, tokenize):
+    """
+    Nerner tokenizer.
+
+    Args:
+        nlp: (todo): write your description
+        tokenize: (int): write your description
+    """
     doc = nlp(tokenize)
 
     finalList = []
