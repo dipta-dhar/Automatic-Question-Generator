@@ -3,12 +3,26 @@ import identification
 
 
 def get_chunk(chunked):
+    """
+    Get the chunk of chunked chunk.
+
+    Args:
+        chunked: (str): write your description
+    """
     str1 = ""
     for j in range(len(chunked)):
         str1 += (chunked[j][0] + " ")
     return str1
 
 def what_whom1(segment_set, num, ner):
+    """
+    Given a list of tokens in the segment_set.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<TO>+<DT>?<RB.?>*<JJ.?>*<NN.?|PRP|PRP\$|VBG|DT|POS|CD|VBN>+}"""
@@ -65,6 +79,14 @@ def what_whom1(segment_set, num, ner):
 
 
 def what_whom2(segment_set, num, ner):
+    """
+    Returns a list of tokenizer.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<IN>+<DT>?<RB.?>*<JJ.?>*<NN.?|PRP|PRP\$|POS|VBG|DT|CD|VBN>+}"""
@@ -120,6 +142,14 @@ def what_whom2(segment_set, num, ner):
 
 
 def whose(segment_set, num, ner):
+    """
+    Returns a list of tokens.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<NN.?>*<PRP\$|POS>+<RB.?>*<JJ.?>*<NN.?|VBG|VBN>+}"""
@@ -164,6 +194,14 @@ def whose(segment_set, num, ner):
 
 
 def howmany(segment_set, num, ner):
+    """
+    Returns a list of ngrams.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<DT>?<CD>+<RB>?<JJ|JJR|JJS>?<NN|NNS|NNP|NNPS|VBG>+}"""
@@ -216,6 +254,14 @@ def howmany(segment_set, num, ner):
 
 
 def howmuch_1(segment_set, num, ner):
+    """
+    Returns a list of nltk sentences.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<IN>+<\$>?<CD>+}"""

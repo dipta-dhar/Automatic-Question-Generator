@@ -2,6 +2,12 @@
 
 
 def hNvalidation(sentence):
+    """
+    Determine whether the given sentence is valid.
+
+    Args:
+        sentence: (todo): write your description
+    """
     flag = 1
 
     Length = len(sentence)

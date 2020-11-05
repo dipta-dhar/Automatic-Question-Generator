@@ -4,6 +4,14 @@ import nonClause
 
 
 def whom_1(segment_set, num, ner):
+    """
+    Returns a list of nltk.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<TO>+<DT>?<RB.?>*<JJ.?>*<NN.?|PRP|PRP\$|VBG|DT|POS|CD|VBN>+}"""
@@ -90,6 +98,14 @@ def whom_1(segment_set, num, ner):
 
 
 def whom_2(segment_set, num, ner):
+    """
+    Returns a list of tokens for a token_set.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<IN>+<DT>?<RB.?>*<JJ.?>*<NN.?|PRP|PRP\$|POS|VBG|DT|CD|VBN>+}"""
@@ -175,6 +191,14 @@ def whom_2(segment_set, num, ner):
 
 
 def whom_3(segment_set, num, ner):
+    """
+    Returns a list of tokens.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<VB.?|MD|RP>+<DT>?<RB.?>*<JJ.?>*<NN.?|PRP|PRP\$|POS|VBG|DT|CD|VBN>+}"""
@@ -272,6 +296,14 @@ def whom_3(segment_set, num, ner):
 
 
 def whose(segment_set, num, ner):
+    """
+    Returns a list all tokens in a segment.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<DT|NN.?>*<PRP\$|POS>+<RB.?>*<JJ.?>*<NN.?|VBG|VBN>+<RB.?>*<VB.?|MD|RP>+}"""
@@ -326,6 +358,14 @@ def whose(segment_set, num, ner):
 
 
 def what_to_do(segment_set, num, ner):
+    """
+    Takes a text segment.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<TO>+<VB|VBP|RP>+<DT>?<RB.?>*<JJ.?>*<NN.?|PRP|PRP\$|POS|VBG|DT>*}"""
@@ -426,6 +466,14 @@ def what_to_do(segment_set, num, ner):
 
 
 def who(segment_set, num, ner):
+    """
+    Returns a list of tokenizer.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<EX>?<DT>?<JJ.?>*<NN.?|PRP|PRP\$|POS|IN|DT|CC|VBG|VBN>+<RB.?>*<VB.?|MD|RP>+}"""
@@ -499,6 +547,14 @@ def who(segment_set, num, ner):
 
 
 def howmuch_2(segment_set, num, ner):
+    """
+    Returns a list of n - grams for a sentence.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<\$>*<CD>+<MD>?<VB|VBD|VBG|VBP|VBN|VBZ|RP>+}"""
@@ -557,6 +613,14 @@ def howmuch_2(segment_set, num, ner):
 
 
 def howmuch_1(segment_set, num, ner):
+    """
+    Returns a list of nltk tags.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<IN>+<\$>?<CD>+}"""
@@ -625,6 +689,14 @@ def howmuch_1(segment_set, num, ner):
 
 
 def howmuch_3(segment_set, num, ner):
+    """
+    Returns a list of ngrams.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+        ner: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment_set[num])
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<MD>?<VB|VBD|VBG|VBP|VBN|VBZ>+<IN|TO>?<PRP|PRP\$|NN.?>?<\$>*<CD>+}"""

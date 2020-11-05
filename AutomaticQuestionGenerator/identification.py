@@ -2,6 +2,13 @@ import nltk
 
 
 def chunk_search(segment, chunked):
+    """
+    Chunk chunks of a chunked segmented chunk.
+
+    Args:
+        segment: (todo): write your description
+        chunked: (todo): write your description
+    """
     m = len(chunked)
     list1 = []
     for j in range(m):
@@ -18,11 +25,23 @@ def chunk_search(segment, chunked):
     return list1
 
 def segment_identify(sen):
+    """
+    Return a unique segment identifier.
+
+    Args:
+        sen: (str): write your description
+    """
     segment_set = sen.split(",")
     return segment_set
 
 
 def clause_identify(segment):
+    """
+    Parse a tokenizer.
+
+    Args:
+        segment: (todo): write your description
+    """
     tok = nltk.word_tokenize(segment)
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<EX>?<DT>?<JJ.?>*<NN.?|PRP|PRP\$|POS|IN|DT|CC|VBG|VBN>+<RB.?|VB.?|MD|RP>+}"""
@@ -48,6 +67,12 @@ def clause_identify(segment):
 
 
 def verbphrase_identify(clause):
+    """
+    Returns a list of tokenizer tokens in - placeholders.
+
+    Args:
+        clause: (todo): write your description
+    """
     tok = nltk.word_tokenize(clause)
     tag = nltk.pos_tag(tok)
     gram = r"""chunk:{<EX>?<DT>?<JJ.?>*<NN.?|PRP|PRP\$|POS|IN|DT|CC|VBG|VBN>+<RB.?>*<VB.?|MD|RP>+}"""
@@ -118,6 +143,13 @@ def verbphrase_identify(clause):
 
 
 def subjectphrase_search(segment_set, num):
+    """
+    Search for matches in a list of the given phrase.
+
+    Args:
+        segment_set: (todo): write your description
+        num: (int): write your description
+    """
     str2 = ""
     for j in range(num - 1, 0, -1):
         str1 = ""
@@ -168,6 +200,12 @@ def subjectphrase_search(segment_set, num):
 
 
 def postprocess(string):
+    """
+    Returns a list of - like tag.
+
+    Args:
+        string: (str): write your description
+    """
     tok = nltk.word_tokenize(string)
     tag = nltk.pos_tag(tok)
 
