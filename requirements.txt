@@ -1,4 +1,4 @@
 nltk==3.4
-numpy==1.16.2
+numpy==1.22.0
 textblob==0.15.3
 spacy==2.1.6
